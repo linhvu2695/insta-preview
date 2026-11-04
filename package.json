@@ -1,0 +1,26 @@
+{
+  "name": "insta-preview",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Social-feed mockup for previewing product photos and videos as feed posts, stories and reels.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "scan": "node scripts/scan-media.mjs",
+    "predev": "node scripts/scan-media.mjs",
+    "dev": "vite --host",
+    "prebuild": "node scripts/scan-media.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "vite": "^8.3.5"
+  }
+}
